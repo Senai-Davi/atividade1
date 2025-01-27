@@ -1,115 +1,167 @@
 <!DOCTYPE html>
-<!-- Inicio da estrutura-->
 <html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aviões</title>
+  <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
     }
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> aviões </title>
-    <style> table, th, td, tr
-        {
-            border: 1px solid black; border-collapse: collapse; width: 500px; text-align: center;
-        }
-    </style>
-     <div class="home" id="home">
-<h1>Ola essa é a seção de home em que explicamos quem somos e oque fazemos somos apreciadores de aviões e queremos compartilhar essa arte para todos do Brasil de forma acesivel!</h1>
-    </div>
- 
-    <body>
 
-        <header>
-            <!-- tabela -->
-            <h1>acidentes por equipamento</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>avião</th>
-                        <th>helicoptero</th>
-                        <th>planador</th>
-                        <th>anfibio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>151</td>
-                    <td>24</td>
-                    <td>1</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>140</td>
-                    <td>29</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>124</td>
-                    <td>20</td>
-                    <td>1</td>
-                    <td>1</td>
-                </tr>
-                </tbody>
-                <tfoot> 
-                    <tr>
-                        <td>124</td>
-                        <td>20</td>
-                        <td>1</td>
-                        <td>1</td>
-                    </tr>
-                </tfoot>
-            </table>
+    /* Menu */
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 10px 0;
+      margin: 0;
+    }
 
-            <h2>exemplo de aviões</h2>
-            <a href="https://pt.wikipedia.org/wiki/Avi%C3%A3o_de_intercep%C3%A7%C3%A3o">avião de interceptação</a> <br>
-            <a target="_blank" href="https://pt.wikipedia.org/wiki/Torpedeiro_(avi%C3%A3o)">wikipedia</a>
+    .menu li {
+      margin: 0 10px;
+    }
 
-            <!--titulos e paragrafos  -->
-            <h2>Caça bombardeiro</h2>
-            <p>Caça-bombardeiro - é um avião que tanto pode cumprir missões de interceptação e combate ar-ar,[1] como
-                também pode realizar ataques com bombas e/ou foguetes a alvos terrestres.[2] Sua menor carga de munição
-                é compensada pelo fato dele ser mais ágil que um bombardeiro convencional, permitindo um ataque mais
-                preciso sem se submeter ao fogo inimigo. Por esses motivos os caça-bombardeiros são utilizados até hoje.
-            </p>
-            <br>
+    .menu a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
 
-            <h2>Avião furtivo </h2>
-            <p>Avião furtivo, ou stealth, são aqueles que possuem um RCS (Radar Cross Section) baixíssimo. Tal aeronave
-                é capaz de fazer essa proeza refletindo Ondas eletromagnéticas ou as absorvendo. O Stealth não quer
-                dizer necessariamente que a aeronave não será mais detectada pelo radar. As aeronaves continuam sendo
-                detectadas, mas agora com o RCS muito baixo. Dependendo do poder do radar as aeronaves stealth seriam
-                detectadas, mas seriam confundidas com pequenos animais voadores que apresentam um RCS de uma águia, por
-                exemplo. Em conjunto de táticas de voo, com a capacidade furtiva das aeronaves, um piloto de um avião
-                Stealth é virtualmente invisivel (ao radar)</p>
-                <br>
+    .menu a:hover {
+      background-color: #575757;
+    }
 
-            <h2>Avião</h2>
-            <p>Um avião ou aeroplano é uma aeronave de asa fixa que é impulsionada pelo empuxo de um motor a jato,
-                hélice ou motor de foguete. Os aviões vêm em uma variedade de tamanhos, formatos e configurações de
-                asas. O amplo espectro de usos dos aviões inclui recreação, transporte de mercadorias e pessoas, militar
-                e experimental.</p>
-                <br>
+    /* Home */
+    .home {
+      padding: 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
 
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWqgtFZIrqlY7sNU_6kp3qEHOPpA4VYTPGkg&s" alt="tal imagem">
-                
-            <!-- lista não ordenada -->
-            <ul class=menu >
-                <li><a href="#home "> home </a></li>
-                <li><a href="https://pt.wikipedia.org/wiki/Avi%C3%A3o">avião</a></li>
-                <li><a href="https://pt.wikipedia.org/wiki/Aeronave">aeronave</a></li>
-                <li><a href="https://pt.wikipedia.org/wiki/Lista_de_avi%C3%B5es">lista de aviões</a></li>
-                <li><a href="https://pt.wikipedia.org/wiki/Avi%C3%A3o_furtivo">Avião furtivo</a></li>
-                <li><a href="https://pt.wikipedia.org/wiki/Ca%C3%A7a-bombardeiro">Avião bombardeiro</a></li>
-                <li><a href="#contato">contato </a></li>
-            </ul>
-        </header>
+    /* Contato */
+    .contato {
+      padding: 20px;
+      text-align: center;
+      background-color: #f2f2f2;
+      margin-top: 20px;
+    }
 
-    </body>
-     <div class="contato" id="contato">
-<h1> 93322-2333 / emaildeholdplacebonito@gmail.com </h1>
-    </div>
+    /* Tabela */
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      text-align: center;
+    }
 
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 10px;
+    }
+
+    /* Imagem */
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Textos */
+    h1, h2 {
+      color: #333;
+      text-align: center;
+    }
+
+    p {
+      color: #555;
+      text-align: justify;
+      max-width: 80%;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Seção Home -->
+  <div class="home" id="home">
+    <h1>Bem-vindo!</h1>
+    <p>Essa é a seção de Home, onde explicamos quem somos e o que fazemos. Somos apreciadores de aviões e queremos compartilhar essa arte com todos do Brasil de forma acessível!</p>
+  </div>
+
+  <!-- Menu de Navegação -->
+  <ul class="menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="https://pt.wikipedia.org/wiki/Avi%C3%A3o">Avião</a></li>
+    <li><a href="https://pt.wikipedia.org/wiki/Aeronave">Aeronave</a></li>
+    <li><a href="https://pt.wikipedia.org/wiki/Lista_de_avi%C3%B5es">Lista de Aviões</a></li>
+    <li><a href="https://pt.wikipedia.org/wiki/Avi%C3%A3o_furtivo">Avião Furtivo</a></li>
+    <li><a href="https://pt.wikipedia.org/wiki/Ca%C3%A7a-bombardeiro">Avião Bombardeiro</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+
+  <!-- Tabela -->
+  <div>
+    <h1>Acidentes por Equipamento</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Avião</th>
+          <th>Helicóptero</th>
+          <th>Planador</th>
+          <th>Anfíbio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>151</td>
+          <td>24</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>140</td>
+          <td>29</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>124</td>
+          <td>20</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>124</td>
+          <td>20</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <!-- Imagem -->
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWqgtFZIrqlY7sNU_6kp3qEHOPpA4VYTPGkg&s" alt="Imagem de Avião">
+
+  <!-- Seção Contato -->
+  <div class="contato" id="contato">
+    <h1>Contato</h1>
+    <p>Telefone: 93322-2333</p>
+    <p>Email: emaildeholdplacebonito@gmail.com</p>
+  </div>
+
+</body>
 </html>
+
